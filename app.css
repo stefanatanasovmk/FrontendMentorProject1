@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+     font-family: 'Inter', sans-serif;
+     font-family: 'Lexend Deca', sans-serif;
+     background-color: hsl(233, 47%, 7%);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     font-size: 15px;
+}
+
+.card{
+     background-color: hsl(244, 38%, 16%);
+     width: 375px;
+     height: 70%;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.first{
+     width: 375px;
+     height: 33%; 
+     padding-bottom: 100%;
+     background-image: linear-gradient(
+      rgba(170, 92, 219, 0.4), 
+      rgba(170, 92, 219, 0.4)
+    ),url(images/image-header-mobile.jpg);
+     background-size: cover;
+     background-position: center;
+     border-radius: 10px 10px 0 0 ;
+}
+
+.second{
+     height: 67%;
+     padding-top: 3em;
+     padding-bottom: 3em;
+     text-align: center;
+     width: 70%;
+}
+
+.title{
+     color: hsl(0, 0%, 100%);
+     font-family: 'Inter', sans-serif;
+     font-size: 2.3em;
+     padding-bottom: 1em;
+     font-weight: 700;
+}
+.word{
+     color: hsl(277, 64%, 61%);
+}
+.paragraph{
+     
+     color: hsla(0, 0%, 100%, 0.75);
+     font-family: 'Inter', sans-serif;
+     font-weight: 400;
+     padding-bottom: 1.3em;
+     font-size: 1em;
+     line-height: 2em;
+     
+     
+}
+
+.list{
+     padding-top: 2em;
+}
+
+.numbers{
+     font-size: 1.9em;
+     color: hsl(0, 0%, 100%);
+     font-family: 'Inter', sans-serif;
+     font-weight: 700;
+     padding-bottom: 0.3em;
+
+}
+
+.m {
+     text-transform: uppercase;
+}
+
+.heading{
+     color: hsla(0, 0%, 100%, 0.6);
+     font-family: 'Lexend Deca', sans-serif;
+     padding-bottom: 2em;
+     font-size: 0.8em;
+     text-transform: uppercase;
+     font-weight: 400;
+     letter-spacing: 0.1em;
+}
+
+@media (min-width: 1200px) {
+     .card{
+          display: flex;
+          align-items: center;
+          flex-direction: row-reverse;
+          
+          width: 80%;
+          height: 500px;
+          padding: 0;
+     }
+
+     .first{
+          width: 45%;
+          height: 100%;
+          background-image: linear-gradient(
+      rgba(170, 92, 219, 0.4), 
+      rgba(170, 92, 219, 0.4)
+    ),url(images/image-header-desktop.jpg);
+    padding-bottom: 0%;
+    border-radius: 0 10px 10px 0;
+     }
+
+     .second{
+          width: 55%;
+          /* height: 100%; */
+          text-align: left;
+          padding: 0 3em 0 3em;
+          
+     }
+
+     .title{
+          font-size: 3em;
+     }
+
+     .paragraph{
+          font-size: 1.3em;
+          letter-spacing: 1px;
+     }
+
+   .list{
+        display: inline-flex;
+        padding-top:40px;
+   }
+
+   .firststats{
+        padding-right: 6em;
+   }
+   .secondstats{
+        padding-right: 6em;
+   }
+
+}
+
+@media (min-width: 1200px) {
+
+     .card{
+          width: 960px;
+     }
+     
+}
+
